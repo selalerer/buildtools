@@ -135,7 +135,7 @@ int main (int argc, char* argv[])
 	std::ostream* pDebug = &std::cerr;
 	if (!debug)
 	{
-		pDebug = new std::ofstream("blablablasdfsf.ertdft.fdtfd");
+		pDebug = new std::stringstream();
 		pDebug->setstate(std::ios_base::badbit);
 	}
 
